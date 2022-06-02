@@ -9,7 +9,7 @@ self.addEventListener("install", function (event) {
     self.skipWaiting();
 });
 
-// called when the SW is activated
+// Called when the SW is activated
 self.addEventListener("activate", function (event) {
   console.log("Activated", event);
     event.waitUntil(clients.claim());
